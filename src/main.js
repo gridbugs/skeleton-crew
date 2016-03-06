@@ -6,7 +6,7 @@ import {Config} from 'config';
 import {initGlobals} from 'globals';
 
 import {StringTerrainGenerator} from 'string_terrain_generator';
-import {ConwayTerrainGenerator} from 'conway_terrain_generator';
+import {ShipGenerator} from 'ship_generator';
 
 import {Level} from 'engine/level';
 import {GameContext} from 'game_context';
@@ -59,18 +59,18 @@ export async function main() {
 "                              #......#",
 "                    #####=#####%%%%%+###########",
 "                    #..................%.......#",
-"                    #..................%.......#",
-"                    =..................%.......#",
-"                    #..................%.......#",
+"                    #...........z......%.......#",
+"                    =...........zz.....%.......#",
+"                    #..........z.z.b...%.......#",
 "                    #..................+.......#",
 "                    #..................%.......#",
 "                    #%%%%%%%%%%%+%%%%%%%%%%%%%%#",
 "                    #..............%.......4123#",
-"                    #..............%s..........#",
 "                    #..............%...........#",
-"                    #........$.....+z..........=",
 "                    #..............%...........#",
-"                    #..............%b...@......#",
+"                    #........$.....+...........=",
+"                    #..............%...........#",
+"                    #..............%....@......#",
 "                    #..............%...........#",
 "                    ############################",
 ""
@@ -80,7 +80,12 @@ export async function main() {
     Level.EcsContext = GameContext;
 
     while (true) {
-        var generator = new StringTerrainGenerator(1, terrainStringArrayL1, null);
+        var generator;
+        if (Config.DEMO) {
+            generator = new StringTerrainGenerator(1, terrainStringArrayL1, null);
+        } else {
+            generator = new ShipGenerator();
+        }
         var firstLevel = new Level(generator);
         var playerCharacter = firstLevel.ecsContext.playerCharacter;
 
