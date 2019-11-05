@@ -4,16 +4,6 @@
   "description": "Roguelike where you fight undead things on a spaceship",
   "author": "Stephen Sherratt",
   "license": "MIT",
-  "main": "index.html",
-  "js-flags": "--harmony --harmony_modules",
-  "devDependencies": {
-    "gulp": "*",
-    "gulp-clean": "*",
-    "gulp-plumber": "*",
-    "gulp-traceur": "*",
-    "gulp-webserver": "*",
-    "yargs": "*"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/stevebob/skeleton-crew.git"
@@ -22,10 +12,8 @@
     "url": "https://github.com/stevebob/skeleton-crew/issues"
   },
   "homepage": "https://github.com/stevebob/skeleton-crew#readme",
-  "window": {
-    "toolbar": false,
-    "resizable": false,
-    "width": 1056,
-    "height": 704
+  "dependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
   }
 }
