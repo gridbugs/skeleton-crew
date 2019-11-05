@@ -1,4 +1,4 @@
-import {makeEnum} from 'utils/enum';
+import {makeEnum} from '../utils/enum.js';
 
 /* Modifier Key Codes */
 export const KEYCODE_SHIFT      = 16;
@@ -50,10 +50,11 @@ shiftCharTable[191] = '?';
 export async function getKey() {
     var ret;
     await new Promise((resolve) => {
-        $(window).keydown((e) => {
+      window.onkeydown = (e) => {
             ret = e;
             resolve();
-        });
+            return false;
+        };
     });
 
     return ret;

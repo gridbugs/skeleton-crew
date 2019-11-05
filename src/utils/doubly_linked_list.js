@@ -1,4 +1,4 @@
-import {assert} from 'utils/assert';
+import {assert} from '../utils/assert.js';
 
 export class Node {
     constructor() {

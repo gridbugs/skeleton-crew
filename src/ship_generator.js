@@ -1,15 +1,15 @@
-import {makeEnum} from 'utils/enum';
-import {EntityPrototypes} from 'entity_prototypes';
-import {CellGrid, Cell} from 'utils/cell_grid';
-import {Config} from 'config';
-import {assert} from 'utils/assert';
-import {Vec2} from 'utils/vec2';
-import {Direction, Directions, CardinalDirections} from 'utils/direction';
-import {SearchQueue} from 'utils/search_queue';
-import * as Random from 'utils/random';
-import * as ArrayUtils from 'utils/array_utils';
-import {Components} from 'components';
-import {Level} from 'engine/level';
+import {makeEnum} from './utils/enum.js';
+import {EntityPrototypes} from './entity_prototypes.js';
+import {CellGrid, Cell} from './utils/cell_grid.js';
+import {Config} from './config.js';
+import {assert} from './utils/assert.js';
+import {Vec2} from './utils/vec2.js';
+import {Direction, Directions, CardinalDirections} from './utils/direction.js';
+import {SearchQueue} from './utils/search_queue.js';
+import * as Random from './utils/random.js';
+import * as ArrayUtils from './utils/array_utils.js';
+import {Components} from './components.js';
+import {Level} from './engine/level.js';
 
 const CONNECTIONS_WIDTH = 30;
 const CONNECTIONS_HEIGHT = 18;

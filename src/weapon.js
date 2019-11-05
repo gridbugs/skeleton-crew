@@ -1,8 +1,8 @@
-import {Typed} from 'engine/typed';
-import {ControlTypes} from 'control';
-import {CellGrid, Cell} from 'utils/cell_grid';
-import {Stack} from 'utils/stack';
-import {Config} from 'config';
+import {Typed} from './engine/typed.js';
+import {ControlTypes} from './control.js';
+import {CellGrid, Cell} from './utils/cell_grid.js';
+import {Stack} from './utils/stack.js';
+import {Config} from './config.js';
 
 export class Weapon extends Typed {
     addAmmoFromWeapon(weapon) {

@@ -1,5 +1,5 @@
-import {Vec2} from 'utils/vec2';
-import {getRandomElement} from 'utils/array_utils';
+import {Vec2} from '../utils/vec2.js';
+import {getRandomElement} from '../utils/array_utils.js';
 
 export class Grid {
     constructor(width, height) {

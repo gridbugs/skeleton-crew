@@ -1,8 +1,8 @@
-import {Component} from 'engine/component';
-import {Knowledge} from 'knowledge';
+import {Component} from '../engine/component.js';
+import {Knowledge} from '../knowledge.js';
 
-import {Components} from 'components';
-import {Weapons} from 'weapons';
+import {Components} from '../components.js';
+import {Weapons} from '../weapons.js';
 
 class ValueComponent extends Component {
     constructor(value) {

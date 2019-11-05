@@ -1,9 +1,9 @@
-import {Vec2} from 'utils/vec2';
-import {Stack} from 'utils/stack';
+import {Vec2} from '../utils/vec2.js';
+import {Stack} from '../utils/stack.js';
 
-import * as Direction from 'utils/direction';
+import * as Direction from '../utils/direction.js';
 
-import {Grid} from 'utils/grid';
+import {Grid} from '../utils/grid.js';
 
 export class Cell {
     constructor(x, y, grid) {

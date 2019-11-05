@@ -1,6 +1,6 @@
-import {Component} from 'engine/component';
-import {Vec2} from 'utils/vec2';
-import {assert} from 'utils/assert';
+import {Component} from '../engine/component.js';
+import {Vec2} from '../utils/vec2.js';
+import {assert} from '../utils/assert.js';
 
 export class TurnTaker extends Component {
     constructor(controller) {

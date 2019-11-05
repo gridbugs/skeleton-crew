@@ -1,11 +1,11 @@
-import {Actions} from 'actions';
+import {Actions} from '../actions.js';
 
-import {Directions} from 'utils/direction';
-import {getRandomInt} from 'utils/random';
-import {Line} from 'utils/line';
-import {makeEnum} from 'utils/enum';
+import {Directions} from '../utils/direction.js';
+import {getRandomInt} from '../utils/random.js';
+import {Line} from '../utils/line.js';
+import {makeEnum} from '../utils/enum.js';
 
-import {Weapon} from 'weapon';
+import {Weapon} from '../weapon.js';
 
 
 export const AmmoReductionType = makeEnum([

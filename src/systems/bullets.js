@@ -1,6 +1,6 @@
-import {ReactiveSystem} from 'engine/reactive_system';
-import {Actions} from 'actions';
-import {Components} from 'components';
+import {ReactiveSystem} from '../engine/reactive_system.js';
+import {Actions} from '../actions.js';
+import {Components} from '../components.js';
 
 export class Bullets extends ReactiveSystem {
     constructor(ecsContext) {

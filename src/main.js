@@ -1,25 +1,25 @@
-import 'manual_types';
-import 'populate_namespaces';
+import './manual_types.js';
+import './populate_namespaces.js';
 
-import {initConfigFromUrl} from 'options';
-import {Config} from 'config';
-import {initGlobals} from 'globals';
-import {GlobalHud} from 'global_hud';
+import {initConfigFromUrl} from './options.js';
+import {Config} from './config.js';
+import {initGlobals} from './globals.js';
+import {GlobalHud} from './global_hud.js';
 
-import {StringTerrainGenerator} from 'string_terrain_generator';
-import {ShipGenerator} from 'ship_generator';
+import {StringTerrainGenerator} from './string_terrain_generator.js';
+import {ShipGenerator} from './ship_generator.js';
 
-import {Level} from 'engine/level';
-import {GameContext} from 'game_context';
+import {Level} from './engine/level.js';
+import {GameContext} from './game_context.js';
 
-import {Components} from 'components';
+import {Components} from './components.js';
 
-import {help} from 'control';
-import {getKey} from 'utils/input';
-import {msDelay} from 'utils/time';
-import {assert} from 'utils/assert';
+import {help} from './control.js';
+import {getKey} from './utils/input.js';
+import {msDelay} from './utils/time.js';
+import {assert} from './utils/assert.js';
 
-import {renderText, HelpText, WinText} from 'text';
+import {renderText, HelpText, WinText} from './text.js';
 
 function initRng() {
     let seed;
@@ -152,3 +152,7 @@ export async function main() {
         currentEcsContext.hud.message = "";
    }
 }
+
+window.onload = function() {
+  main()
+};

@@ -1,4 +1,4 @@
-import {getRandomInt} from 'utils/random';
+import {getRandomInt} from '../utils/random.js';
 
 /* Data structure for keeping track of the best values
  * that have been inserted into it, based on some given

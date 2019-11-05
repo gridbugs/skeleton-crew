@@ -1,7 +1,7 @@
-import {Components} from 'components';
-import {Tiles} from 'tiles';
-import {Weapons} from 'weapons';
-import {EntityPrototypes} from 'entity_prototypes';
+import {Components} from '../components.js';
+import {Tiles} from '../tiles.js';
+import {Weapons} from '../weapons.js';
+import {EntityPrototypes} from '../entity_prototypes.js';
 
 export function Wall(x, y) {
     return [

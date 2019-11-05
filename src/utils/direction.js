@@ -1,6 +1,6 @@
-import {Vec2} from 'utils/vec2';
-import {makeEnum} from 'utils/enum';
-import {SQRT2} from 'utils/math';
+import {Vec2} from './vec2.js';
+import {makeEnum} from './enum.js';
+import {SQRT2} from './math.js';
 
 export const DirectionType = makeEnum([
     'Cardinal',
@@ -102,8 +102,8 @@ Direction.NorthWest.right90 = Direction.NorthEast;
 
 
 export const Directions = Direction.values;
-export const CardinalDirections = [for (dir of Directions) if (dir.cardinal) dir];
-export const OrdinalDirections = [for (dir of Directions) if (dir.ordinal) dir];
-export const DirectionIndices = [for (dir of Directions) dir.index];
-export const CardinalDirectionIndices = [for (dir of CardinalDirections) dir.index];
-export const OrdinalDirectionIndices = [for (dir of OrdinalDirections) dir.index];
+export const CardinalDirections = Directions.filter(dir => dir.cardinal);
+export const OrdinalDirections = Directions.filter(dir => dir.ordinal);
+export const DirectionIndices = Directions.map(dir => dir.index);
+export const CardinalDirectionIndices = CardinalDirections.map(dir => dir.index);
+export const OrdinalDirectionIndices = OrdinalDirections.map(dir => dir.index);

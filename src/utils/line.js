@@ -1,5 +1,5 @@
-import {spread} from 'utils/spread';
-import {Direction} from 'utils/direction';
+import {spread} from '../utils/spread.js';
+import {Direction} from '../utils/direction.js';
 
 export class Line {
     constructor(startCoord, endCoord) {

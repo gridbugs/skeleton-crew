@@ -1,7 +1,7 @@
-import {Weapon} from 'weapon';
-import {Directions} from 'utils/direction';
-import {Actions} from 'actions';
-import {Line} from 'utils/line';
+import {Weapon} from '../weapon.js';
+import {Directions} from '../utils/direction.js';
+import {Actions} from '../actions.js';
+import {Line} from '../utils/line.js';
 
 export class Flamethrower extends Weapon {
     constructor() {

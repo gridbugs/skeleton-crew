@@ -1,4 +1,4 @@
-import {Components} from 'components';
+import {Components} from './components.js';
 
 export class Hud {
     constructor(container, weapon, message, stats, atmosphere, overlay) {

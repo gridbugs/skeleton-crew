@@ -1,16 +1,16 @@
-import {Entity} from 'engine/entity';
+import {Entity} from '../engine/entity.js';
 
-import {CellGrid, Cell} from 'utils/cell_grid';
-import {ComponentCountingEntitySet} from 'engine/entity_set';
+import {CellGrid, Cell} from '../utils/cell_grid.js';
+import {ComponentCountingEntitySet} from '../engine/entity_set.js';
 
-import {Config} from 'config';
-import {assert} from 'utils/assert';
+import {Config} from '../config.js';
+import {assert} from '../utils/assert.js';
 
-import {TurnTaker, PlayerCharacter} from 'engine/engine_components';
+import {TurnTaker, PlayerCharacter} from '../engine/engine_components.js';
 
-import {Schedule} from 'engine/schedule';
+import {Schedule} from '../engine/schedule.js';
 
-import {msDelay} from 'utils/time';
+import {msDelay} from '../utils/time.js';
 
 export class SpacialHashCell extends Cell {
     constructor(x, y, grid) {

@@ -1,5 +1,5 @@
-import {System} from 'engine/system';
-import {Actions} from 'actions';
+import {System} from '../engine/system.js';
+import {Actions} from '../actions.js';
 
 export class ReactiveSystem extends System {
     constructor(ecsContext) {

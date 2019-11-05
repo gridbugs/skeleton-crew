@@ -5,7 +5,7 @@
  * from pop should not be used after thet next call
  * to push.
  */
-import {ObjectPool} from 'utils/object_pool';
+import {ObjectPool} from '../utils/object_pool.js';
 
 export class ObjectStack extends ObjectPool {
     constructor(Type, n = 0) {

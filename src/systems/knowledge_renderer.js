@@ -1,9 +1,9 @@
-import {System} from 'engine/system';
+import {System} from '../engine/system.js';
 
-import {Components} from 'components';
-import {Tiles} from 'tiles';
+import {Components} from '../components.js';
+import {Tiles} from '../tiles.js';
 
-import {Direction} from 'utils/direction';
+import {Direction} from '../utils/direction.js';
 
 export class KnowledgeRenderer extends System {
     constructor(ecsContext, drawer) {

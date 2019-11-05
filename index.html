@@ -1,21 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>Skeleton Crew</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
-    <script src="lib/require.js"></script>
-    <script>
-        requirejs.config({
-            baseUrl: 'build',
-            paths: {
-                jquery: '../lib/jquery',
-                seedrandom: '../lib/seedrandom'
-            }
-        });
-        requirejs(['requirejs-main'])
-    </script>
-
-<script src="lib/traceur-runtime.js"></script>
+    <script src="lib/jquery.js"></script>
+    <script src="lib/seedrandom.js"></script>
+    <script src="dist/bundle.js"></script>
 
 <style>
 * {

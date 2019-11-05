@@ -1,12 +1,12 @@
-import {Turn} from 'engine/turn';
-import {Action} from 'engine/action';
+import {Turn} from './engine/turn.js';
+import {Action} from './engine/action.js';
 
-import {Actions} from 'actions';
-import {Direction} from 'utils/direction';
+import {Actions} from './actions.js';
+import {Direction} from './utils/direction.js';
 
-import * as Input from 'utils/input';
-import * as Control from 'control';
-import {Controller} from 'controller';
+import * as Input from './utils/input.js';
+import * as Control from './control.js';
+import {Controller} from './controller.js';
 
 async function getControlAction(entity) {
     while (true) {

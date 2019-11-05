@@ -1,11 +1,11 @@
-import {Action} from 'engine/action';
-import {Components} from 'components';
-import {EntityPrototypes} from 'entity_prototypes';
-import {roll} from 'utils/dice';
-import {AmmoReductionType} from 'weapons/guns';
-import {Line} from 'utils/line';
-import {Directions} from 'utils/direction';
-import {Stack} from 'utils/stack';
+import {Action} from '../engine/action.js';
+import {Components} from '../components.js';
+import {EntityPrototypes} from '../entity_prototypes.js';
+import {roll} from '../utils/dice.js';
+import {AmmoReductionType} from '../weapons/guns.js';
+import {Line} from '../utils/line.js';
+import {Directions} from '../utils/direction.js';
+import {Stack} from '../utils/stack.js';
 
 export class Walk extends Action {
     constructor(entity, direction) {

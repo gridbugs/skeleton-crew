@@ -1,30 +1,30 @@
-import {EcsContext, SpacialHashCell} from 'engine/ecs_context';
+import {EcsContext, SpacialHashCell} from './engine/ecs_context.js';
 
 /* Globals */
-import {GlobalDrawer} from 'global_drawer';
-import {GlobalHud} from 'global_hud';
+import {GlobalDrawer} from './global_drawer.js';
+import {GlobalHud} from './global_hud.js';
 
 /* Systems */
-import {Collision} from 'systems/collision';
-import {Combat} from 'systems/combat';
-import {Observation} from 'systems/observation';
-import {KnowledgeRenderer} from 'systems/knowledge_renderer';
-import {PathPlanner} from 'path_planner';
-import {Fire} from 'systems/fire';
-import {Healing} from 'systems/healing';
-import {UpgradeOnDescent} from 'systems/upgrade_on_descent';
-import {Winning} from 'systems/winning';
-import {Bullets} from 'systems/bullets';
-import {AutoPickup} from 'systems/auto_pickup';
-import {Atmosphere} from 'systems/atmosphere';
-import {DeathEvents} from 'systems/death_events';
-import {TimedTransformations} from 'systems/timed_transformations';
-import {Teleport} from 'systems/teleport';
-import {DescendMessage} from 'systems/descend_message';
-import {AutoClimb} from 'systems/auto_climb';
+import {Collision} from './systems/collision.js';
+import {Combat} from './systems/combat.js';
+import {Observation} from './systems/observation.js';
+import {KnowledgeRenderer} from './systems/knowledge_renderer.js';
+import {PathPlanner} from './path_planner.js';
+import {Fire} from './systems/fire.js';
+import {Healing} from './systems/healing.js';
+import {UpgradeOnDescent} from './systems/upgrade_on_descent.js';
+import {Winning} from './systems/winning.js';
+import {Bullets} from './systems/bullets.js';
+import {AutoPickup} from './systems/auto_pickup.js';
+import {Atmosphere} from './systems/atmosphere.js';
+import {DeathEvents} from './systems/death_events.js';
+import {TimedTransformations} from './systems/timed_transformations.js';
+import {Teleport} from './systems/teleport.js';
+import {DescendMessage} from './systems/descend_message.js';
+import {AutoClimb} from './systems/auto_climb.js';
 
 /* Components */
-import {Components} from 'components';
+import {Components} from './components.js';
 
 class GameCell extends SpacialHashCell {
     constructor(x, y, grid) {

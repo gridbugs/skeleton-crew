@@ -1,8 +1,8 @@
-import {Weapon} from 'weapon';
-import {Directions} from 'utils/direction';
-import {Actions} from 'actions';
-import {Line} from 'utils/line';
-import {Gun, AmmoReductionType} from 'weapons/guns';
+import {Weapon} from '../weapon.js';
+import {Directions} from '../utils/direction.js';
+import {Actions} from '../actions.js';
+import {Line} from '../utils/line.js';
+import {Gun, AmmoReductionType} from '../weapons/guns.js';
 
 export class RocketLauncher extends Gun {
     constructor() {

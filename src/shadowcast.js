@@ -1,7 +1,7 @@
-import {Vec2} from 'utils/vec2';
-import {Direction} from 'utils/direction';
-import {SQRT2, constrain} from 'utils/math';
-import {ObjectStack} from 'utils/object_stack';
+import {Vec2} from './utils/vec2.js';
+import {Direction} from './utils/direction.js';
+import {SQRT2, constrain} from './utils/math.js';
+import {ObjectStack} from './utils/object_stack.js';
 
 class StackFrame {
     constructor() {

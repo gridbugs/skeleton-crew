@@ -1,12 +1,12 @@
-import {ReactiveSystem} from 'engine/reactive_system';
-import {Actions} from 'actions';
-import {Components} from 'components';
-import {CellGrid, Cell} from 'utils/cell_grid';
-import {Stack} from 'utils/stack';
-import {DijkstraMap, DijkstraCell} from 'utils/dijkstra_map';
-import {BestSet} from 'utils/best_set';
-import {Directions} from 'utils/direction';
-import {roll} from 'utils/dice';
+import {ReactiveSystem} from '../engine/reactive_system.js';
+import {Actions} from '../actions.js';
+import {Components} from '../components.js';
+import {CellGrid, Cell} from '../utils/cell_grid.js';
+import {Stack} from '../utils/stack.js';
+import {DijkstraMap, DijkstraCell} from '../utils/dijkstra_map.js';
+import {BestSet} from '../utils/best_set.js';
+import {Directions} from '../utils/direction.js';
+import {roll} from '../utils/dice.js';
 
 const VacuumCellStack = new Stack();
 const VacuumCoordStack = new Stack();

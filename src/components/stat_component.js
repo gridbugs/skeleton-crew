@@ -1,4 +1,4 @@
-import {Component} from 'engine/component';
+import {Component} from '../engine/component.js';
 
 class StatComponent extends Component {
     constructor(value) {
