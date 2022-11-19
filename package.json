@@ -14,6 +14,6 @@
   "homepage": "https://github.com/stevebob/skeleton-crew#readme",
   "dependencies": {
     "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.12"
   }
 }
